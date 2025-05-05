@@ -1,8 +1,18 @@
 import React from 'react'
+import {Routes , Route} from "react-router"
+import Home from './pages/Home'
+import Navbar from './components/common/Navbar'
+
 
 const App = () => {
   return (
-    <div className='text-2xl bg-red-500 text-yellow-200'>Feedback Collector</div>
+    
+    <div>
+   <Navbar />
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+    </Routes>
+    </div>
   )
 }
 
