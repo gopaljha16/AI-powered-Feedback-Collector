@@ -30,6 +30,11 @@ const userSchema = Schema({
         min:3,
         max:90
     },
+    role:{
+        type:String,
+        enum:["user" , "admin"],
+        default:"user",
+    }
     
 
 } , {Timestamp:true});
